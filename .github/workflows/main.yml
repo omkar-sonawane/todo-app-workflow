@@ -28,6 +28,7 @@ jobs:
         run: npm run lint
 
   Deploy-to-aws:
+    needs: lint-and-typecheck
     runs-on: ubuntu-latest
 
     steps:
