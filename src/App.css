@@ -1,0 +1,11 @@
+﻿#root { min-height: 100vh; }
+* { box-sizing: border-box; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.app-shell { align-items: center; background: #f6f0e8; display: flex; justify-content: center; min-height: 100vh; padding: 32px 20px; }
+.todo-app { color: #324238; max-width: 610px; width: 100%; }
+header { margin-bottom: 38px; } header p { color: #d7834d; font-size: .72rem; font-weight: 800; letter-spacing: .16em; margin: 0 0 12px; } h1 { color: #29473a; font-family: Georgia, serif; font-size: clamp(2.7rem, 9vw, 4.6rem); font-weight: 400; letter-spacing: -.06em; line-height: .92; margin: 0 0 16px; } header span { color: #7c817a; }
+form { background: #fffdf9; border: 1px solid #e5ddd2; box-shadow: 0 10px 25px rgba(82,65,45,.07); display: flex; margin-bottom: 25px; padding: 7px; } input { background: transparent; border: 0; color: #324238; flex: 1; outline: 0; padding: 12px 14px; } form button { background: #d97745; border: 0; color: white; font-size: 1.7rem; width: 48px; }
+nav, footer { align-items: center; display: flex; justify-content: space-between; } nav { border-bottom: 1px solid #ded8cf; color: #81837d; font-size: .78rem; padding-bottom: 13px; } nav button, footer button { background: transparent; border: 0; color: #858782; font-size: .76rem; padding: 5px 9px; text-transform: capitalize; } nav .selected { background: #dfe9df; color: #466856; font-weight: 700; }
+ul { list-style: none; margin: 0; padding: 4px 0; } li { align-items: center; border-bottom: 1px solid #e5dfd6; display: flex; gap: 15px; min-height: 64px; } li span { flex: 1; } li.completed span { color: #9a9d96; text-decoration: line-through; }.check { background: #fff; border: 1.5px solid #97a79c; border-radius: 50%; color: white; height: 22px; width: 22px; }.completed .check { background: #62816c; }.delete { background: transparent; border: 0; color: #b6b2aa; font-size: 1.5rem; }.empty { color: #92938f; justify-content: center; padding: 30px; } footer { color: #81837d; font-size: .78rem; padding-top: 18px; } footer button { color: #bd6b43; padding-left: 0; }
+@media (max-width: 480px) { .app-shell { padding: 28px 18px; } nav, footer { align-items: flex-start; flex-direction: column; gap: 8px; } }
